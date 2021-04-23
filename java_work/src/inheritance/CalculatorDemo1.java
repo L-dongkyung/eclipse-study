@@ -1,18 +1,22 @@
 package inheritance;
 
-class Calculator0 {
+class Calculator {
 	int left, right;
+	
+
+	public Calculator(int left, int right) {
+		this.left = left;
+		this.right = right;
+	}
+	public Calculator() {
+		
+	}
 	
 	public void setOprands(int left, int right) {
 		this.left = left;
 		this.right = right;
 	}
-	
-	public Calculator0(int left, int right) {
-		this.left = left;
-		this.right = right;
-	}
-	
+		
 	 // setOprands는 없어도 됨 생성자를 생성함.
 	
 	public void sum() {
@@ -24,8 +28,16 @@ class Calculator0 {
 	}
 }
 
+class SubstractionableCalculator extends Calculator{
+	public SubstractionableCalculator(int left, int right) {
+		 super(left, right);
+	}
+	public void substract() {
+		System.out.println(this.left - this.right);
+	}
+}
 
-public class CalculatorDeomo4 {
+public class CalculatorDemo1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -33,9 +45,9 @@ public class CalculatorDeomo4 {
 		c1.setOprands(10, 20);
 		c1.sum();
 		c1.avg();
+		c1.substract();
 		
 		
-
 	}
 
 }
