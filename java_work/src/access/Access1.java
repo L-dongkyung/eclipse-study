@@ -19,7 +19,7 @@ public class Access1 {
 		A a = new A();
 		
 		System.out.println(a.y());
-		System.out.println(a.z());    // 오류 발생
+		// System.out.println(a.z());    // 오류 발생
 		System.out.println(a.x());
 
 	}
