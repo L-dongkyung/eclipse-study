@@ -42,6 +42,17 @@ class CalculatorDecoMinus extends Calcul{
 		System.out.println("- avg:"+ (this.left+this.right)/2);
 	}
 }
+class CalculatorDecoAst extends Calcul{
+	public void sum() {
+		// System.out.println("- sum:"+ (this.left+this.right));
+		System.out.println("* sum:"+ _sum());
+	}
+	
+	public void avg(){
+		System.out.println("* avg:"+ (this.left+this.right)/2);
+	}
+}
+
 
 public class Calculator {
 
