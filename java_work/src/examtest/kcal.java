@@ -13,6 +13,7 @@ public class kcal {
 		kg=(hieth-100)*0.9;
 		System.out.println(kg*e);
 		System.out.println(kg);
+		
 
 	}
 
