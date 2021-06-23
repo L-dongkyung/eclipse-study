@@ -21,8 +21,6 @@ public class test7_4 {
 		// TODO Auto-generated method stub
 		System.out.println(sumUp(6));
 		System.out.println(regsum(6));
-
 	}
-	5+함수4+함수3
 
 }
