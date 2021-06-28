@@ -9,7 +9,7 @@ public class test7_12 {
 	
 	static void printbit(int x) {               // 강사님
 		for(int i=31; i>=0;i--) {
-			System.out.print(((x>>>i & i) == 1)? '1':'0');
+			System.out.print(((x>>>i & 1) == 1)? '1':'0');
 		}
 	}
 	static int roLeft(int x, int n) {			// 강사님
@@ -55,6 +55,8 @@ public class test7_12 {
 		System.out.println(bin(x));
 		System.out.println("오른쪽 : "+rotateRight(bin(x), 6));
 		System.out.println("왼  쪽 : "+rotateLeft(bin(x), 6));
+		System.out.println("강사님 오른쪽 : "+roRight(x, 6));
+		System.out.println("강사님 왼  쪽 : "+roLeft(x, 6));
 
 	}
 
